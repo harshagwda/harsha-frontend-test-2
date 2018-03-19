@@ -62,24 +62,18 @@
 
 
     <div class="navbar">  
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
+      <a href="#home" id="show-content">Home</a>
+       <a href="#about" id="hide-content">About</a>
 
-      <div class="dropdown dp">
-        <button class="dropbtn">Products
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#procs">Processors</a>
-          <a href="#gpus">Graphics Cards</a>
-          <a href="#mobos">Motherboards</a>
-        </div>
-
-      </div>
-
+    <select>
+  <option value="volvo">Products</option>
+  <option value="saab">Processor</option>
+  <option value="mercedes">GPU</option>
+  <option value="audi">Motherboard</option>
+</select>
     </div>
 
-
+<div id="dd">
     <div class="container">
       <br>
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -141,6 +135,7 @@
       </form>
     </div>
   </div>
+</div>
 
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <style>
@@ -152,21 +147,21 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-4 col-md-4 col-lg-4">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </div>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+      </div><span>IT HUB Technology</span>
       <div class="col-sm-4 col-md-4 col-lg-4">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </div>
+      </div><span>IT HUB Technology</span>
       <div class="col-sm-4 col-md-4 col-lg-4">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </div>
+      </div><span>IT HUB Technology</span>
     </div>
   </div>
-  <div class="wrapper">
 
     <img src="images/4.png" alt="logo" class="it">
-
-    <p class="par">
+    <div class="wrapper abc">
+    <div id="dd">
+   <p class="par">
       Computer hardware are the physical parts or components of a computer, such as the monitor, keyboard, computer data storage, graphic card, sound card and motherboard.[1] By contrast, software is instructions that can be stored and ran by hardware.
 
       Hardware is directed by the software to execute any command or instruction. A combination of hardware and software forms a usable computing system.
@@ -179,6 +174,20 @@
 
     </p>
   </div>
+
+  <p class="par about-us" style="display: none">
+When the first digital computers appeared in the early 1940s,[11] the instructions to make them operate were wired into the machine. Practitioners quickly realized that this design was not flexible and came up with the "stored program architecture" or von Neumann architecture. Thus the division between "hardware" and "software" began with abstraction being used to deal with the complexity of computing.
+
+Programming languages started to appear in the early 1950s[12] and this was also another major step in abstraction. Major languages such as Fortran, ALGOL, and COBOL were released in the late 1950s to deal with scientific, algorithmic, and business problems respectively. David Parnas introduced the key concept of modularity and information hiding in 1972[13] to help programmers deal with the ever-increasing complexity of software systems.
+
+The origins of the term "software engineering" have been attributed to different sources. The term "software engineering" appeared in a list of services offered by companies in the June 1965 issue of COMPUTERS and AUTOMATION and was used more formally in the August 1966 issue of Communications of the ACM (Volume 9, number 8) “letter to the ACM membership” by the ACM President Anthony A. Oettinger;[14], it is also commonly associated with the title of a seminal NATO conference in 1968 by Professor F.L. Bauer, the first conference on software engineering.[15]. At the time there was perceived to be a "software crisis"
+
+Programming languages started to appear in the early 1950s[12] and this was also another major step in abstraction. Major languages such as Fortran, ALGOL, and COBOL were released in the late 1950s to deal with scientific, algorithmic, and business problems respectively. David Parnas introduced the key concept of modularity and information hiding in 1972[13] to help programmers deal with the ever-increasing complexity of software systems.
+
+Knowledge of computer programming is a prerequisite for becoming a software engineer. In 2004 the IEEE Computer Society produced the SWEBOK, which has been published as ISO/IEC Technical Report 1979:2004, describing the body of knowledge that they recommend to be mastered by a graduate software engineer with four years of experience.[21] Many software engineers enter the profession by obtaining a university degree or training at a vocational school. One standard international curriculum for undergraduate software engineering degrees was defined by the CCSE, and updated in 2004.[22] A number of universities have Software Engineering degree programs; as of 2010, there were 244 Campus Bachelor of Software Engineering programs, 70 Online programs, 230 Masters-level programs, 41 Doctorate-level programs, and 69 Certificate-level programs in the United States.[23]
+
+In addition to university education, many companies sponsor internships for students wishing to pursue careers in information technology. These internships can introduce the student to interesting real-world tasks that typical software engineers encounter every day. Similar experience can be gained through military service in software engineering.
+</p> 
   <span class="glyphicon glyphicon-chevron-up rgt" id ="top" aria-hidden="true"></span> 
   <script type="text/javascript"> $('#top').click(function(){ $(window).scrollTop(0); }); </script>
 
@@ -204,5 +213,23 @@
       <a href="https://www.twitter.com" class="fa fa-twitter"></a>
       <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
     </div>
+    <script type="text/javascript">
+    $(document).ready(function(){
+   $("#ww").hide();
+   $('#hide-content').click(function(){
+     $("#ww").show();
+     $(".about-us").show();
+     $('#dd').hide();
+     $('.abc').hide();
+   });
+   $("#show-content").click(function(){
+     $("#ww").hide();
+     $("#dd").show();
+     $('.abc').show();
+     $(".about-us").hide();
+
+   });
+ });
+    </script>
   </body>
   </html>

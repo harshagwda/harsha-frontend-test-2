@@ -3,13 +3,15 @@
 <head>
   <title>test2</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/index.css" type="text/css" />
+  <link rel="stylesheet" href="css/index.css" type="text/css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <meta charset="utf-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="/JS/index.js" type="javascript/text">
+  <script type="text/javascript" src="JS/index.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
@@ -17,101 +19,117 @@
   <div id="logo">
     <a href="">
       <img id="logo" src="images/4.png" alt="logo"/></a>
-      </div>
+    </div>
   </div>
-  
+
   <div id="hd">
-    <h1>IT-Hub</h1>
+    <h1>IT-HUB</h1>
+
+    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+    <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+    <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
   </div>
 
-
-  <div class="navbar">  
-    <a href="#home" id="show-content">Home</a>
-    <a href="#about" id="hide-content">About</a>
-
-    <select>
-      <option value="volvo">Products</option>
-      <option value="saab">Processor</option>
-      <option value="mercedes">GPU</option>
-      <option value="audi">Motherboard</option>
-    </select>
+  <div class="icon-bar">
+    <a class="active" href="#" id="show-content"><i></i>HOME</a>
+    <a href="#" id="hide-content"><i></i>ABOUT</a>
+    <a href="#"><i></i>PRODUCTS</a>
+    <a href="#"><i></i>BLOG</a>
+    <a href="#"><i></i>CONTACTS</a>
   </div>
 
   <div id="dd">
+    <div class="container" style="
+    width: 1280px;
+    height: 60px;;">
+    <br>
+ </div>
     <div class="container">
-      <br>
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
+      <div class="page-header">
 
-          <div class="item active page-link page-item">
-            <img src="images/intel.jpg" alt="Intel" width="2000" height="1200"> 
-          </div>
-
-          <div class="item page-link page-item">
-            <img src="images/nvidia1.jpg" alt="Nvidia" width="2000" height="1200">
-          </div>
-
-          <div class="item page-link page-item">
-            <img src="images/mobos.jpg" alt="Mobo" width="2000" height="1200">
-          </div>
-
-          <div class="item page-link page-item">
-            <img src="images/ram.jpg" alt="RAM" width="2000" height="1200">
-          </div>
-        </div>
-        
-
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </div>
-    <form>
-
-      <div class="row">
-        <input type="text" name="search" placeholder="Search..">
-        
-      </form>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+       <div class="carousel-inner">
+        <div class="item active"> 
+        <img src="images/intel.png" alt="Los Angeles" style="height:600px; width:1300px;"> 
+        </div> 
+        <div class="item"> <img src="images/mobos.jpg" alt="Chicago" style="height:600px; width:1300px;">
+         </div> 
+         <div class="item"> <img src="images/nvidia.jpg" alt="New york" style="height:600px; width:1300px;"> 
+         </div> 
+         </div> 
+         <ol id="carousel_button" style="position:relative;padding-left: 615px;"> 
+         <a class="l" href="#myCarousel" data-slide="prev" > 
+         <button><span class="left">prev</span></button> 
+         <span class="sr-only"></span> </a> 
+         <div id="btn"> 
+         <button data-target="#myCarousel" data-slide-to="0" >1</button> 
+         <button data-target="#myCarousel" data-slide-to="1" >2</button> 
+         <button data-target="#myCarousel" data-slide-to="2" >3</button> 
+         </div>
+          <a class="r" href="#myCarousel" data-slide="next">
+           <button><span class="right">nxt</span></button> 
+           <span class="sr-only"></span> </a>
+            </ol> 
+            </div>
     </div>
+
+    <div>
+    </div>
+ 
+
+<div class="container" style="margin-top:35px;">
+  <div class="row">
+        <div class="search">
+<input type="text" class="form-control input-sm" maxlength="64" placeholder="Search" />
+ <button type="submit" class="btn btn-primary btn-sm">Search</button>
+</div>
   </div>
 </div>
+  </div>
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-4 col-sm-4 col-md-4 col-lg-4">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
-    </div><span>IT HUB Technology</span>
-    <div class="col-sm-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-sm-4 col-sm-4 col-md-4 col-lg-4 hub">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    </div><span>IT HUB Technology</span>
-    <div class="col-sm-4 col-sm-4 col-md-4 col-lg-4">
+      <span>
+        <button>Motherboard Info</button>
+      </span>
+    </div>
+
+    <div class="col-sm-4 col-sm-4 col-md-4 col-lg-4 hub">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    </div><span>IT HUB Technology</span>
+      <span>
+        <button>CPU Info</button>
+      </span>
+    </div>
+
+    <div class="col-sm-4 col-sm-4 col-md-4 col-lg-4" style="padding-top: 63px;">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      <span>
+        <button>Processor Info</button>
+      </span>
+    </div>
   </div>
 </div>
 <div class="row rw">
   <img src="images/4.png" alt="logo" class="it">
-  <div class="wrapper abc">
-    <div id="dd">
-     <p class="par">
-      Computer hardware are the physical parts or components of a computer, such as the monitor, keyboard, computer data storage, graphic card, sound card and motherboard.[1] By contrast, software is instructions that can be stored and ran by hardware.
+  <div class="wrapper">
+   <p class="par" id ="dd" style="padding-top: 35px;">
+    Computer hardware are the physical parts or components of a computer, such as the monitor, keyboard, computer data storage, graphic card, sound card and motherboard.[1] By contrast, software is instructions that can be stored and ran by hardware.
 
-      Hardware is directed by the software to execute any command or instruction. A combination of hardware and software forms a usable computing system.
+    Hardware is directed by the software to execute any command or instruction. A combination of hardware and software forms a usable computing system.
 
 
-      The template for all modern computers is the Von Neumann architecture, detailed in a 1945 paper by Hungarian mathematician John von Neumann. This describes a design architecture for an electronic digital computer with subdivisions of a processing unit consisting of an arithmetic logic unit and processor registers, a control unit containing an instruction register and program counter, a memory to store both data and instructions, external mass storage, and input and output mechanisms.[2] The meaning of the term has evolved to mean a stored-program computer in which an instruction fetch and a data operation cannot occur at the same time because they share a common bus. This is referred to as the Von Neumann bottleneck and often limits the performance of the system.
-      For the third consecutive year, U.S. business-to-business channel sales (sales through distributors and commercial resellers) increased, ending 2013 up nearly 6 percent at $61.7 billion. The impressive growth was the fastest sales increase since the end of the recession. Sales growth accelerated in the second half of the year peaking in fourth quarter with a 6.9 percent increase over the fourth quarter of 2012.
+    The template for all modern computers is the Von Neumann architecture, detailed in a 1945 paper by Hungarian mathematician John von Neumann. This describes a design architecture for an electronic digital computer with subdivisions of a processing unit consisting of an arithmetic logic unit and processor registers, a control unit containing an instruction register and program counter, a memory to store both data and instructions, external mass storage, and input and output mechanisms.[2] The meaning of the term has evolved to mean a stored-program computer in which an instruction fetch and a data operation cannot occur at the same time because they share a common bus. This is referred to as the Von Neumann bottleneck and often limits the performance of the system.
+    For the third consecutive year, U.S. business-to-business channel sales (sales through distributors and commercial resellers) increased, ending 2013 up nearly 6 percent at $61.7 billion. The impressive growth was the fastest sales increase since the end of the recession. Sales growth accelerated in the second half of the year peaking in fourth quarter with a 6.9 percent increase over the fourth quarter of 2012.
 
-      The computer case encloses most of the components of the system. It provides mechanical support and protection for internal elements such as the motherboard, disk drives, and power supplies, and controls and directs the flow of cooling air over internal components. The case is also part of the system to control electromagnetic interference radiated by the computer, and protects internal parts from electrostatic discharge. Large tower cases provide extra internal space for multiple disk drives or other peripherals and usually stand on the floor, while desktop cases provide less expansion room. All-in-one style designs from Apple, namely the iMac, and similar types, include a video display built into the same case. Portable and laptop computers require cases that provide impact protection for the unit. A current development in laptop computers is a detachable keyboard, which allows the system to be configured as a touch-screen tablet. Hobbyists may decorate the cases with colored lights, paint, or other features, in an activity called case modding.
-    </p>
-  </div>
+    The computer case encloses most of the components of the system. It provides mechanical support and protection for internal elements such as the motherboard, disk drives, and power supplies, and controls and directs the flow of cooling air over internal components. The case is also part of the system to control electromagnetic interference radiated by the computer, and protects internal parts from electrostatic discharge. Large tower cases provide extra internal space for multiple disk drives or other peripherals and usually stand on the floor, while desktop cases provide less expansion room. All-in-one style designs from Apple, namely the iMac, and similar types, include a video display built into the same case. Portable and laptop computers require cases that provide impact protection for the unit. A current development in laptop computers is a detachable keyboard, which allows the system to be configured as a touch-screen tablet. Hobbyists may decorate the cases with colored lights, paint, or other features, in an activity called case modding.
+  </p>
 </div>
-<p class="par about-us" style="display: none">
+<p class="par about-us" style="display: none; width: 1310px;
+    padding-left: 60px;">
   When the first digital computers appeared in the early 1940s,[11] the instructions to make them operate were wired into the machine. Practitioners quickly realized that this design was not flexible and came up with the "stored program architecture" or von Neumann architecture. Thus the division between "hardware" and "software" began with abstraction being used to deal with the complexity of computing.
 
   Programming languages started to appear in the early 1950s[12] and this was also another major step in abstraction. Major languages such as Fortran, ALGOL, and COBOL were released in the late 1950s to deal with scientific, algorithmic, and business problems respectively. David Parnas introduced the key concept of modularity and information hiding in 1972[13] to help programmers deal with the ever-increasing complexity of software systems.
@@ -123,20 +141,20 @@
   Knowledge of computer programming is a prerequisite for becoming a software engineer. In 2004 the IEEE Computer Society produced the SWEBOK, which has been published as ISO/IEC Technical Report 1979:2004, describing the body of knowledge that they recommend to be mastered by a graduate software engineer with four years of experience.[21] Many software engineers enter the profession by obtaining a university degree or training at a vocational school. One standard international curriculum for undergraduate software engineering degrees was defined by the CCSE, and updated in 2004.[22] A number of universities have Software Engineering degree programs; as of 2010, there were 244 Campus Bachelor of Software Engineering programs, 70 Online programs, 230 Masters-level programs, 41 Doctorate-level programs, and 69 Certificate-level programs in the United States.[23]
 
   In addition to university education, many companies sponsor internships for students wishing to pursue careers in information technology. These internships can introduce the student to interesting real-world tasks that typical software engineers encounter every day. Similar experience can be gained through military service in software engineering.
-</p> 
+</p>
 
-<span class="glyphicon glyphicon-chevron-up rgt" id ="top" aria-hidden="true">
-</span> 
-<a onclick="showtext('text')" href="javascript:void(0);" class="mr">More</a>
-<div class="container footer">
+<span class="glyphicon glyphicon-chevron-up rgt" id="btn-go-to-top" aria-hidden="true">
+</span>
+<a id ="more-func" class="more">More</a>
+
+
+<div class="footer">
   <p>
     &copy; 2018 ITHub.com, contact us:0821-*******, E-mail:admin@email.com
   </p>
-  <div class="fotr">
-    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
-    <a href="https://www.twitter.com" class="fa fa-twitter"></a>
-    <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
-  </div>
 </div>
 </body>
 </html>
+
+
+

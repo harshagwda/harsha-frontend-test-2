@@ -117,9 +117,6 @@ body {margin:0;}
     background-color: #000;
 }
 
-.active {
-    background-color: #4CAF50 !important;
-}
 
   #logo{
    float: left;
@@ -345,4 +342,26 @@ body {margin:0;}
   position: absolute;
   right:42%;top: 
   0px;
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
 }
